@@ -13,5 +13,8 @@
   "bugs": {
     "url": "https://github.com/Secondtwin/NodeJS_Mentor_Program/issues"
   },
-  "homepage": "https://github.com/Secondtwin/NodeJS_Mentor_Program#readme"
+  "homepage": "https://github.com/Secondtwin/NodeJS_Mentor_Program#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
 }
