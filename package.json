@@ -1,0 +1,17 @@
+{
+  "name": "nodejs_mentor_program",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Secondtwin/NodeJS_Mentor_Program.git"
+  },
+  "author": "Dariia Kuzovkova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Secondtwin/NodeJS_Mentor_Program/issues"
+  },
+  "homepage": "https://github.com/Secondtwin/NodeJS_Mentor_Program#readme"
+}
