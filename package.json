@@ -2,8 +2,11 @@
   "name": "nodejs_mentor_program",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {},
+  "main": "hw1/index.js",
+  "scripts": {
+    "hw1task1": "nodemon ./hw1/task1.js",
+    "hw1task2": "nodemon ./hw1/task2.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Secondtwin/NodeJS_Mentor_Program.git"
@@ -15,6 +18,8 @@
   },
   "homepage": "https://github.com/Secondtwin/NodeJS_Mentor_Program#readme",
   "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "csvtojson": "^2.0.10",
     "nodemon": "^2.0.7"
   }
 }
