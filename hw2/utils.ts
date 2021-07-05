@@ -3,21 +3,21 @@ import { User } from './models/user.model';
 let usersList: User[] = [
     {
         id: '1',
-        login: 'A',
+        login: 'Abc',
         password: '123',
         age: 1,
         isDeleted: false
     },
     {
         id: '2',
-        login: 'B',
+        login: 'Bc',
         password: '456',
         age: 2,
         isDeleted: false
     },
     {
         id: '3',
-        login: 'C',
+        login: 'Cb',
         password: '789',
         age: 3,
         isDeleted: false
@@ -50,7 +50,8 @@ export function addUser(newUser: User): User {
 
 export function updateUserById(id: string, data: User): User | undefined {
     let updatedUser = getUserById(id);
-    const updatedUserList: User[] = usersList.map((user) => {
+
+    usersList = usersList.map((user) => {
         if (user.id === id) {
             updatedUser = { ...user, ...data };
 
@@ -60,11 +61,12 @@ export function updateUserById(id: string, data: User): User | undefined {
         return user;
     }) as User[];
 
-    usersList = updatedUserList;
-
     return updatedUser;
 }
 
-// export function getAutoSuggestUsers(loginSubstring: string, limit: number) {
-//   /* TODO: implement logic */
-// }
+export function getAutoSuggestUsers(loginSubstring: string, limit: number): User[] {
+    return usersList
+        .filter((item) => item.login.toLowerCase().includes(loginSubstring.toLowerCase()))
+        .sort((a, b) => a.login.localeCompare(b.login))
+        .slice(0, limit);
+}
