@@ -40,10 +40,6 @@ export class UserDataService {
         } as NonNullFindOptions);
     }
 
-    addUser(newUser: User): User {
-        return newUser;
-    }
-
     createUser(userData: User): Promise<Model<string, User>> {
         return this.user.create(userData);
     }

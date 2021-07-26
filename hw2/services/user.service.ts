@@ -25,7 +25,6 @@ export class UserService {
             id: uuidv4()
         };
 
-        console.log(user);
         return this.dataAccessService.createUser(user);
     }
 
