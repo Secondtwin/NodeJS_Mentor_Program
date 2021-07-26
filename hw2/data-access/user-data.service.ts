@@ -1,4 +1,4 @@
-import { Model, ModelCtor, Op, Sequelize, WhereOptions } from 'sequelize';
+import { Model, ModelCtor, Op, Sequelize } from 'sequelize';
 import { defineTable, defineUser } from '../models/user-model';
 import { User } from '../models/user.model';
 import { NonNullFindOptions } from 'sequelize/types/lib/model';
