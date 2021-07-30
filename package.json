@@ -7,7 +7,8 @@
     "lint": "eslint . --ext .ts",
     "hw1task1": "nodemon ./hw1/task1.js",
     "hw1task2": "nodemon ./hw1/task2.js",
-    "hw2": "nodemon ./hw2/app.ts"
+    "hw2": "nodemon ./hw2/app.ts",
+    "hw4": "nodemon ./hw4/app.ts"
   },
   "repository": {
     "type": "git",
