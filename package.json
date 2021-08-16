@@ -8,7 +8,8 @@
     "hw1task1": "nodemon ./hw1/task1.js",
     "hw1task2": "nodemon ./hw1/task2.js",
     "hw2": "nodemon ./hw2/app.ts",
-    "hw4": "nodemon ./hw4/app.ts"
+    "hw4": "nodemon ./hw4/app.ts",
+    "hw5": "nodemon ./hw5/app.ts"
   },
   "repository": {
     "type": "git",
@@ -32,7 +33,8 @@
     "joi": "^17.4.0",
     "nodemon": "^2.0.7",
     "sequelize-cli": "^6.2.0",
-    "typescript": "^4.3.5"
+    "typescript": "^4.3.5",
+    "winston": "^3.3.3"
   },
   "dependencies": {
     "express": "^4.17.1",
