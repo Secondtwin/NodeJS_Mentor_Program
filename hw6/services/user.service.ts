@@ -1,7 +1,7 @@
 import { UserDataService } from '../data-access/user-data.service';
 import { v4 as uuidv4 } from 'uuid';
 import { Model } from 'sequelize';
-import { logger, User } from '../models';
+import { User } from '../models';
 
 export class UserService {
     private dataAccessService;
