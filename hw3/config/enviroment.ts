@@ -1,6 +1,6 @@
 export const environment = {
-    databaseName: 'mentor_prgr_hw3',
-    databaseUser: 'postgres',
-    databasePass: '123456',
-    host: 'localhost'
+    databaseName: process.env.databaseName || 'mentor_prgr_hw3',
+    databaseUser: process.env.databaseUser || 'postgres',
+    databasePass: process.env.databasePass || '123456',
+    host: process.env.host || 'localhost'
 };
