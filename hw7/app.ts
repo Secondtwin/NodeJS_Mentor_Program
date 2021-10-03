@@ -11,7 +11,7 @@ import { config } from 'dotenv';
 
 config();
 
-const app = express();
+export const app = express();
 const sequelize = new Sequelize(
     environment.databaseName,
     environment.databaseUser,
